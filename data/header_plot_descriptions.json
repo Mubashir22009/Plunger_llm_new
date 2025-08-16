@@ -1,0 +1,137 @@
+[
+  {
+    "param_id": "velocity_avg",
+    "description": {
+      "header_title": "Avg. Velocity",
+      "header_description": "Average arrival velocity across selected cycles.",
+      "plot_title": "Velocity vs. Cycle #",
+      "plot_description": "Shows each cycle's arrival velocity"
+    }
+  },
+  {
+    "param_id": "arrival_success_rate",
+    "description": {
+      "header_title": "Arrival Success Rate",
+      "header_description": "Percentage of cycles with successful arrivals.",
+      "plot_title": "Arrival vs. Cycle #",
+      "plot_description": "● Green circles: Successful arrivals\n● Red circles: Non-arrivals\n● Circle size: Cycle duration"
+    }
+  },
+  {
+    "param_id": "uptime_ratio",
+    "description": {
+      "header_title": "Avg. Uptime Ratio",
+      "header_description": "Ratio of productive time to total cycle time.\n$\\text{Uptime Ratio} = \\frac{\\text{Flow Duration}}{\\text{Total Cycle Duration}}$",
+      "plot_title": "Shut-in, Arrival, After-flow Durations vs. Cycle #",
+      "plot_description": "Shows Shut-in, Arrival, After Flow Duration for each cycle.\n● Red: After-flow duration\n● Yellow: Arrival duration\n● Green: Shut-in duration\n● Bar length: Total cycle duration"
+    }
+  },
+  {
+    "param_id": "volume_avg",
+    "description": {
+      "header_title": "Avg. Gas Volume",
+      "header_description": "Average Gas Volume across selected cycles.",
+      "plot_title": "Gas Volume vs. Cycle #",
+      "plot_description": "Shows gas volume for each cycle"
+    }
+  },
+  {
+    "param_id": "flowrate_avg",
+    "description": {
+      "header_title": "Avg. Flowrate",
+      "header_description": "Average of flow rates across selected cycles during flow periods.",
+      "plot_title": "Flow Rate Distribution vs. Cycle #",
+      "plot_description": " Avg. flow-rate during the flow period of each selected cycle.\n\n● Color-coded bars: Flow rate distribution histogram\n- Green: Low flow rates\n- Yellow: Medium flow rates\n- Red: High flow rates\n● Bar height: Mean flow rate for the cycle\n● Overlay line: Trend of mean flow rates across cycles\n\nInteractive features:\n● Click any bar: Detailed flow rate vs. time plot for that cycle\n● Hover shows: Cycle #, Mean flow rate, Min/max flow rate"
+    }
+  },
+  {
+    "param_id": "p_velocity_corelation",
+    "description": {
+      "header_title": "Pressure-Velocity Correlation",
+      "header_description": "Relationship between uplift pressure and arrival velocity.\nRange: -1 to 1.",
+      "plot_title": "Velocity, Uplift Pressure vs. Cycle #",
+      "plot_description": "● Circle size: Cycle duration\n● Color: Uplift pressure\n- Green: low\n- Red: high\n● Circle Position: Arrival Velocity"
+    }
+  },
+  {
+    "param_id": "non_arrival_breakdown",
+    "description": {
+      "header_title": "Non-Arrival Breakdown",
+      "header_description": "Analysis of non-arrival causes (low velocity/pressure).",
+      "plot_title": "Velocity, Uplift Pressure vs. Cycle #",
+      "plot_description": "● Circle size: Cycle duration\n● Color: Uplift pressure\n- Green: low\n- Red: high\n● Circle Position: Arrival Velocity\n● Green border: Arrival\n● Red border: Non-arrival"
+    }
+  },
+  {
+    "param_id": "liquid_load",
+    "description": {
+      "header_title": "Avg. Liquid Load",
+      "header_description": "Average liquid column pressure difference.\n$\\text{Liquid Load} = \\text{Casing Pressure}_\\text{ Shut-in end} - \\text{Tubing Pressure}_\\text{ Shut-in end}$",
+      "plot_title": "Liquid Load vs. Cycle #",
+      "plot_description": "Shows liquid load at shut-in end"
+    }
+  },
+  {
+    "param_id": "line_pressure_avg",
+    "description": {
+      "header_title": "Avg. Line Pressure",
+      "header_description": "Average line pressure at shut-in end.",
+      "plot_title": "Line Pressure vs. Cycle #",
+      "plot_description": "Shows line pressure at shut-in end"
+    }
+  },
+  {
+    "param_id": "shutin_efectiveness",
+    "description": {
+      "header_title": "Avg. Shut-in Effectiveness",
+      "header_description": "Pressure buildup rate during shut-in.\n$\\text{Shut-in Effectiveness} = \\frac{\\text{Uplift Pressure}_\\text{ Shut-in end} - \\text{Uplift Pressure}_\\text{ Shut-in start}}{\\text{Shut-in Duration}}$",
+      "plot_title": "Shut-in Duration, Uplift Pressure vs. Cycle #",
+      "plot_description": "● Bars: Shut-in duration of each cycle\n● Line: Uplift pressure per cycle"
+    }
+  },
+  {
+    "param_id": "gas_per_min_afterflow_avg",
+    "description": {
+      "header_title": "Avg. Gas Volume per Minute",
+      "header_description": "Average gas rate during flow period.",
+      "plot_title": "Volume, Flow Duration vs. Cycle #",
+      "plot_description": "● Line: Gas volume\n● Bars: Flow duration"
+    }
+  },
+  {
+    "param_id": "fall_back_risk_idx",
+    "description": {
+      "header_title": "Fallback Risk Index",
+      "header_description": "Correlation between Velocity in the next cycle and residual flow in the current cycle.",
+      "plot_title": "Pressure vs. Cycle #",
+      "plot_description": "● Line: Arrival velocity of the next cycle\n● Bars: Residual Flow\n● Green Bars: Arrival\n● Red Bars: Non-arrival"
+    }
+  },
+  {
+    "param_id": "flowrate_drop_ratio_in_afterflow",
+    "description": {
+      "header_title": "Avg. Flow Rate Drop Ratio",
+      "header_description": "Average flow rate decline during Afterflow across selected cycles.\n$\\text{Drop Ratio} = \\frac{\\text{Flow Rate}_\\text{ Afterflow Start} - \\text{Flow Rate}_\\text{ Afterflow End}}{\\text{Flow Rate}_\\text{ Afterflow Start}}$",
+      "plot_title": "Flow Rate Drop Ratio vs. Cycle #",
+      "plot_description": "Shows flow rate decline during Afterflow period per cycle."
+    }
+  },
+  {
+    "param_id": "drain_ratio_avg",
+    "description": {
+      "header_title": "Avg. Drain Ratio",
+      "header_description": "Average Casing pressure reduction efficiency across selected cycles.\n$\\text{Drain Ratio} = {\\text{Casing Pressure}_\\text{ Cycle End} - \\text{Casing Pressure}_\\text{Flow Start}}$",
+      "plot_title": "Drain Ratio vs. Cycle #",
+      "plot_description": "Shows casing pressure reduction efficiency per cycle."
+    }
+  },
+  {
+    "param_id": "residual_flow_avg",
+    "description": {
+      "header_title": "Avg. Residual Flow Rate",
+      "header_description": "Average flow rate at after-flow end across selected cycles",
+      "plot_title": "Flow Rate vs. Cycle #",
+      "plot_description": "Shows residual flow rate at after-flow end per cycle."
+    }
+  }
+]
