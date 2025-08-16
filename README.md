@@ -5,6 +5,8 @@ $ source .venv/bin/activate
 $ pip install -r requirements.txt
 ```
 
+Also put your api keys in `.env` file
+
 ## Run in interactive mode
 ```sh
 $ python main.py
